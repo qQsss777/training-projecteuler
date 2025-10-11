@@ -1,0 +1,66 @@
+# Fichiers de compilation
+*.o
+*.obj
+*.lo
+*.slo
+*.out
+*.exe
+*.a
+*.so
+*.dll
+*.dylib
+
+# Fichiers générés par le linker
+*.ilk
+*.map
+*.pch
+*.pdb
+*.idb
+
+# Fichiers de build
+/build/
+/bin/
+/lib/
+/dist/
+/CMakeFiles/
+/CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Qt (si tu utilises Qt)
+moc_*
+qrc_*
+ui_*
+
+# Visual Studio
+*.vcxproj*
+*.sln
+*.user
+*.suo
+*.ncb
+*.opensdf
+*.log
+*.tlog
+ipch/
+.vscode/
+.vs/
+
+# CLion
+.idea/
+*.iml
+
+# Code::Blocks
+*.depend
+*.layout
+*.cbp
+
+# Autres fichiers temporaires
+*~
+*.swp
+*.tmp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
