@@ -8,7 +8,8 @@ find_package(Catch2 REQUIRED)
 
 # Liste des fichiers sources de tests dans src/
 set(TEST_SOURCES
-    src/001.cpp
+    src/main.cpp
+    src/002.cpp
 )
 
 add_executable(test_runner ${TEST_SOURCES})
