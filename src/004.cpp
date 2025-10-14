@@ -6,17 +6,16 @@
 // https://projecteuler.fr/p/4
 
 // je ne trouve pas propre car on termine forcément la boucle, j'aimerai avoir un break
-long Palindrome(unsigned int digits)
+long Palindrome(unsigned int min, unsigned int max)
 {
     long result = 0;
-    std::string strNumber(digits, '9');
-    long a = std::stol(strNumber);
-    long b = std::stol(strNumber);
-    while (a > 0)
+    long a = max;
+    long b = max;
+    while (a > min)
     {
         bool isFound = false;
         long tmpB = b;
-        while (tmpB > 0)
+        while (tmpB > min)
         {
             long tmpResult = a * tmpB;
             // on vérifie si c'est un palindrome
@@ -43,15 +42,15 @@ long Palindrome(unsigned int digits)
 
 TEST_CASE("Renvoie un long", "[Palindrome]")
 {
-    REQUIRE(std::is_same<decltype(Palindrome(2)), long>::value);
+    REQUIRE(std::is_same<decltype(Palindrome(9, 99)), long>::value);
 }
 
 TEST_CASE("Pour 2 chiffres, renvoie 91", "[Palindrome]")
 {
-    REQUIRE(Palindrome(2) == 9009);
+    REQUIRE(Palindrome(9, 99) == 9009);
 }
 
 TEST_CASE("Pour 3 chiffres, renvoie 906609", "[Palindrome]")
 {
-    REQUIRE(Palindrome(3) == 906609);
+    REQUIRE(Palindrome(99, 999) == 906609);
 }
