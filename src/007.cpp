@@ -41,7 +41,7 @@ TEST_CASE("Pour une limite de 6, renvoie 13", "[Premier]")
     REQUIRE(Premier(6) == 13);
 }
 
-TEST_CASE("Pour une limite de 10001, renvoie 13", "[Premier]")
+TEST_CASE("Pour une limite de 10001, renvoie 104743", "[Premier]")
 {
     REQUIRE(Premier(10001) == 104743);
 }
