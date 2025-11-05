@@ -30,17 +30,17 @@ TEST_CASE("Pour 2x2 renvoie 6", "[Paths]")
     REQUIRE(Paths(2, 2) == 6);
 }
 
-TEST_CASE("Pour 2x3 renvoie 6", "[Paths]")
+TEST_CASE("Pour 2x3 renvoie 10", "[Paths]")
 {
     REQUIRE(Paths(2, 3) == 10);
 }
 
-TEST_CASE("Pour 3x2 renvoie 6", "[Paths]")
+TEST_CASE("Pour 3x2 renvoie 10", "[Paths]")
 {
     REQUIRE(Paths(3, 2) == 10);
 }
 
-TEST_CASE("Pour 20x20 renvoie 6", "[Paths]")
+TEST_CASE("Pour 20x20 renvoie 137846528820", "[Paths]")
 {
     REQUIRE(Paths(20, 20) == 137846528820);
 }
